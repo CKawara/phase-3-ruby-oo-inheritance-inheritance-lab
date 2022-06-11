@@ -1,5 +1,12 @@
-require_relative './User'
+class Student < User
 
-class Student 
+    attr_reader :knowledge
 
+    def initialize
+        @knowledge = []
+    end
+
+    def learn(words)
+        @knowledge << words
+    end
 end
